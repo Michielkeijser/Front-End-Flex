@@ -1,0 +1,41 @@
+body {
+  background-color: #393E46;
+  color: white;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+font-size: 60px;
+text-align: center;
+margin: 0px;
+}
+
+h2 {
+text-align: center; 
+}
+h3 {
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  margin: 0px;
+}
+
+.profielfoto {
+  display: flex;
+  margin: 50px auto 50px;
+}
+
+.list1 {
+  margin: auto;
+  width: 300px;
+}
+
+.article1 {
+width: 600px;
+margin: 50px auto 50px;
+font-size: 15px;
+
+}
+
+.Emperador {
+  display: flex;
+  margin: 50px auto 50px;
