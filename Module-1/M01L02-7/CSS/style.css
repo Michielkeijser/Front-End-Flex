@@ -1,0 +1,85 @@
+body {
+  background-color: #393E46;
+  color: white;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  margin: 0px;
+}
+
+.profielfoto {
+  display: flex;
+  margin: 50px auto;
+}
+
+.list1 {
+  margin: auto;
+  width: 300px;
+}
+
+.article1 {
+  width: 600px;
+  margin: 50px auto 50px;
+  font-size: 15px;
+  border-style: solid;
+  border-color: white;
+  padding: 10px 20px 30px 40px;
+}
+
+.article2 {
+  width: 600px;
+  margin: 50px auto 50px;
+  font-size: 15px;
+  border-style: solid;
+  border-color: white;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.Emperador {
+  display: flex;
+  margin: 50px auto 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #333;
+}
+
+.active {
+  background-color: #333;
+}
