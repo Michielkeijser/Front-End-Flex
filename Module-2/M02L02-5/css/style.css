@@ -1,0 +1,58 @@
+/* Deel 1 */
+.link1:hover {
+  color: lightblue;
+  font-weight: bolder;
+}
+
+.link2:active {
+  color: red;
+  font-style: italic;
+}
+
+.link3:visited {
+  color: yellow;
+}
+
+/* Deel 2 */
+nav li a {
+  background-color: grey;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  height: 50px;
+  margin: 0;
+  padding-top: 25%;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+
+nav li a:hover {
+  background-color: lightblue;
+}
+
+.deel2 ul input {
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin: 15px 0 0 10px;
+}
+
+.deel2 ul input:focus {
+  border-color: lightblue;
+  border-style: solid;
+  border-width: 3px;
+  outline-style: none;
+}
+
+.deel2 ul {
+  background-color: darkblue;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  list-style: none;
+  padding: 0;
+}
+
+.currentpage {
+  background-color: #393E46;
+}

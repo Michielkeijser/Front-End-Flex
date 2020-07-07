@@ -43,7 +43,7 @@ hr {
   color: #393E46;
 }
 
-nav li a {
+nav li  {
   display: block;
   box-sizing: border-box;
   color: white;
@@ -62,7 +62,7 @@ nav ul {
   flex-direction: row;
 }
 
-li a:hover {
+nav li a:hover {
   background-color: #393E46;
 }
 
