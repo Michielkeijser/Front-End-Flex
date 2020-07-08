@@ -1,0 +1,38 @@
+body {
+  background: #231F20;
+  text-align: center;
+}
+
+h1 {
+  color: #FFF;
+  font-family: 'Oswald';
+  font-weight: 700;
+  margin: 30px auto;
+  position: relative;
+  text-transform: uppercase;
+  width: 550px;
+}
+
+h1::before {
+  background-color: #4A90E2;
+  border-radius: 15px 0 0 15px;
+  border-style: none;
+  content: '';
+  display: block;
+  height: 25px;
+  margin: 13px 0 0 18px;
+  position: absolute;
+  width: 25px;
+}
+
+h1::after {
+  background-color: #4A90E2;
+  border-radius: 0 15px 15px 0;
+  border-style: none;
+  content: '';
+  display: inline-block;
+  height: 25px;
+  margin: 13px 0 0 5px;
+  position: absolute;
+  width: 25px;
+}
