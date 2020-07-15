@@ -142,13 +142,14 @@ $bradius: 10px;
   display: flex;
   flex-direction: column;
   left: 0;
-  list-style: none;
   margin: 0;
   padding: 5px;
   position: relative;
   text-align: center;
   width: 300px;
   left: -250px;
+  transition: 5000ms;
+
 
   & a:hover {
     left: 200px;
