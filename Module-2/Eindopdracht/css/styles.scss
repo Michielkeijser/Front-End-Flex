@@ -133,8 +133,8 @@ $bradius: 10px;
 // Opdracht 3
 @mixin after {
   font-family: "Font Awesome 5 Free";
-  position: absolute;
-  right: 17px;
+  position: relative;
+  left: 98px;
 }
 @mixin socials {
   box-sizing: border-box;

@@ -157,8 +157,8 @@ body {
 .socials .blog::after {
   content: "\f5fc";
   font-family: "Font Awesome 5 Free";
-  position: absolute;
-  right: 17px;
+  position: relative;
+  left: 98px;
 }
 
 .socials .twitter {
@@ -168,8 +168,8 @@ body {
 .socials .twitter::after {
   content: "\f099";
   font-family: "Font Awesome 5 Free";
-  position: absolute;
-  right: 17px;
+  position: relative;
+  left: 98px;
 }
 
 .socials .linkedin {
@@ -179,8 +179,8 @@ body {
 .socials .linkedin::after {
   content: "\f0e1";
   font-family: "Font Awesome 5 Free";
-  position: absolute;
-  right: 17px;
+  position: relative;
+  left: 98px;
 }
 
 .socials .facebook {
@@ -190,8 +190,8 @@ body {
 .socials .facebook::after {
   content: "\f39e";
   font-family: "Font Awesome 5 Free";
-  position: absolute;
-  right: 17px;
+  position: relative;
+  left: 98px;
 }
 
 .socials .github {
@@ -201,6 +201,6 @@ body {
 .socials .github::after {
   content: "\f09b";
   font-family: "Font Awesome 5 Free";
-  position: absolute;
-  right: 17px;
+  position: relative;
+  left: 98px;
 }
