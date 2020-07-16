@@ -1,6 +1,7 @@
 body {
   background-color: #c3cfe2;
 }
+
 // Opdracht 1
 $textcolor: #393E46;
 
@@ -56,6 +57,7 @@ $textcolor: #393E46;
     }
   }
 }
+
 // Opdracht 2
 $bradius: 10px;
 
@@ -100,7 +102,7 @@ $bradius: 10px;
       height: 30px;
       margin: 0;
       padding: 4px;
-      position: absolute;
+      position: relative;
       text-align: center;
       text-decoration: none;
       width: 100px;
@@ -113,100 +115,98 @@ $bradius: 10px;
     }
   }
 }
+
 @media screen and (min-width: 600px) {
   .grid {
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (min-width: 1024px) {
   .grid {
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 // Opdracht 3
+@mixin after {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 17px;
+}
 @mixin socials {
   box-sizing: border-box;
   color: #fff;
+  display: block;
   font-family: sans-serif;
   font-size: 20px;
   font-weight: bold;
   height: 50px;
-  padding: 10px;
+  margin: 0;
+  padding: 13px;
   position: relative;
   text-decoration: none;
+  width: 300px;
 }
 
 .socials {
-  display: flex;
-  flex-direction: column;
-  left: 0;
   margin: 0;
-  padding: 5px;
-  position: relative;
   text-align: center;
-  width: 300px;
-  left: -250px;
-  transition: 5000ms;
 
+  & a {
+    @include socials;
+    left: -250px;
+    transition: 500ms;
 
-  & a:hover {
-    left: 200px;
+    &:hover {
+      left: -15px;
+    }
   }
 }
 
 .socials .blog {
   background-color: #e17b77;
-  @include socials;
 
   &::after {
-    font-family: "Font Awesome 5 Free"; content: "\f5fc";
-    position: absolute;
-    right: 20px;
+    content: "\f5fc";
+    @include after;
   }
 }
 
 .socials .twitter {
   background-color: #00aced;
-  @include socials;
 
   &::after {
-    font-family: "Font Awesome 5 Free"; content: "\f081";
-    position: absolute;
-    right: 20px;
+    content: "\f099";
+    @include after;
   }
 }
 
 .socials .linkedin {
   background-color: #007bb6;
-  @include socials;
 
   &::after {
-    font-family: "Font Awesome 5 Free"; content: "\f08c";
-    position: absolute;
-    right: 20px;
+    content: "\f0e1";
+    @include after;
   }
 }
 
 .socials .facebook {
   background-color: #3b5998;
-  @include socials;
 
   &::after {
-    font-family: "Font Awesome 5 Free"; content: "\f082";
-    position: absolute;
-    right: 20px;
+    content: "\f39e";
+    @include after;
   }
 }
 
 .socials .github {
   background-color: #333;
-  @include socials;
 
   &::after {
-    font-family: "Font Awesome 5 Free"; content: "\f09b";
-    position: absolute;
-    right: 20px;
+    content: "\f09b";
+    @include after;
   }
 }
