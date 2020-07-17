@@ -12,4 +12,4 @@ console.log(6 - 4);
 console.log(20 / 4);
 
 let age = "30";
-console.log(typeof(age));
+console.log(typeof age);
