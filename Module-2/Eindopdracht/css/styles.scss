@@ -93,7 +93,7 @@ $bradius: 10px;
 
     &--button {
       background-color: #111;
-      border-radius: 10px;
+      border-radius: $bradius;
       border-style: none;
       box-sizing: border-box;
       color: white;
@@ -166,7 +166,7 @@ $bradius: 10px;
   }
 }
 
-.socials .blog {
+.socials__blog {
   background-color: #e17b77;
 
   &::after {
@@ -175,7 +175,7 @@ $bradius: 10px;
   }
 }
 
-.socials .twitter {
+.socials__twitter {
   background-color: #00aced;
 
   &::after {
@@ -184,7 +184,7 @@ $bradius: 10px;
   }
 }
 
-.socials .linkedin {
+.socials__linkedin {
   background-color: #007bb6;
 
   &::after {
@@ -193,7 +193,7 @@ $bradius: 10px;
   }
 }
 
-.socials .facebook {
+.socials__facebook {
   background-color: #3b5998;
 
   &::after {
@@ -202,7 +202,7 @@ $bradius: 10px;
   }
 }
 
-.socials .github {
+.socials__github {
   background-color: #333;
 
   &::after {

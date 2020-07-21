@@ -150,55 +150,55 @@ body {
   left: -15px;
 }
 
-.socials .blog {
+.socials__blog {
   background-color: #e17b77;
 }
 
-.socials .blog::after {
+.socials__blog::after {
   content: "\f5fc";
   font-family: "Font Awesome 5 Free";
   position: relative;
   left: 98px;
 }
 
-.socials .twitter {
+.socials__twitter {
   background-color: #00aced;
 }
 
-.socials .twitter::after {
+.socials__twitter::after {
   content: "\f099";
   font-family: "Font Awesome 5 Free";
   position: relative;
   left: 98px;
 }
 
-.socials .linkedin {
+.socials__linkedin {
   background-color: #007bb6;
 }
 
-.socials .linkedin::after {
+.socials__linkedin::after {
   content: "\f0e1";
   font-family: "Font Awesome 5 Free";
   position: relative;
   left: 98px;
 }
 
-.socials .facebook {
+.socials__facebook {
   background-color: #3b5998;
 }
 
-.socials .facebook::after {
+.socials__facebook::after {
   content: "\f39e";
   font-family: "Font Awesome 5 Free";
   position: relative;
   left: 98px;
 }
 
-.socials .github {
+.socials__github {
   background-color: #333;
 }
 
-.socials .github::after {
+.socials__github::after {
   content: "\f09b";
   font-family: "Font Awesome 5 Free";
   position: relative;
