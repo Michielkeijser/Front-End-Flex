@@ -1,4 +1,6 @@
-let age = 32;
+const age = 32;
+const isFemale = true
+const driverStatus = "bob"
 
 if (age > 18) {
   console.log("Older then 18");
@@ -6,15 +8,11 @@ if (age > 18) {
   console.log("Younger then 18");
 }
 
-let isFemale = true
-
 if (isFemale) {
   console.log("Is female");
 } else {
   console.log("Is not female");
 }
-
-let driverStatus = "bob"
 
 if (driverStatus == "bob") {
   console.log("Allowed to drive");
