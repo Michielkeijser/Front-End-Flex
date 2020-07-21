@@ -17,7 +17,7 @@ body {
   background-color: #fff;
   border-radius: 20px 20px 0 0;
   box-sizing: border-box;
-  color: #393E46;
+  color: #393e46;
   font-size: 16px;
   height: 65%;
   line-height: 1.7;
@@ -52,7 +52,7 @@ body {
 }
 
 .testimonial__bottom--p {
-  color: #393E46;
+  color: #393e46;
 }
 
 .grid {
@@ -70,7 +70,7 @@ body {
 
 .grid__container--background {
   align-items: center;
-  background-color: #393E46;
+  background-color: #393e46;
   border-radius: 10px;
   box-sizing: border-box;
   display: flex;
