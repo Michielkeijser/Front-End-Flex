@@ -79,4 +79,4 @@ console.log('Temperament tweede kat:', catBreeds.slice(1)[0].temperament.slice(0
 
 console.log('Temperament laatste kat:', catBreeds.slice(-1)[0].temperament.slice(4)[0]);
 
-console.log('Temperament laatste kat:', catBreeds.slice(1)[0].temperament.slice());
+console.log('Voedsel derde kat:', catBreeds.slice(2)[0].food.favourite_food);
