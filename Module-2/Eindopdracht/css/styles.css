@@ -156,7 +156,7 @@ body {
 
 .socials__blog::after {
   content: "\f5fc";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 free";
   position: relative;
   left: 98px;
 }
@@ -167,9 +167,9 @@ body {
 
 .socials__twitter::after {
   content: "\f099";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 brands";
   position: relative;
-  left: 98px;
+  left: 89px;
 }
 
 .socials__linkedin {
@@ -178,9 +178,9 @@ body {
 
 .socials__linkedin::after {
   content: "\f0e1";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 brands";
   position: relative;
-  left: 98px;
+  left: 80px;
 }
 
 .socials__facebook {
@@ -189,9 +189,9 @@ body {
 
 .socials__facebook::after {
   content: "\f39e";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 brands";
   position: relative;
-  left: 98px;
+  left: 74px;
 }
 
 .socials__github {
@@ -200,7 +200,7 @@ body {
 
 .socials__github::after {
   content: "\f09b";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 brands";
   position: relative;
-  left: 98px;
+  left: 89px;
 }

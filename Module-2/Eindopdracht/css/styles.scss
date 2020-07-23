@@ -131,10 +131,13 @@ $bradius: 10px;
 }
 
 // Opdracht 3
-@mixin after {
-  font-family: "Font Awesome 5 Free";
+@mixin brands {
+  font-family: "Font Awesome 5 brands";
   position: relative;
-  left: 98px;
+}
+@mixin free {
+  font-family: "Font Awesome 5 free";
+  position: relative;
 }
 @mixin socials {
   box-sizing: border-box;
@@ -171,7 +174,8 @@ $bradius: 10px;
 
   &::after {
     content: "\f5fc";
-    @include after;
+    @include free;
+    left: 98px;
   }
 }
 
@@ -179,8 +183,10 @@ $bradius: 10px;
   background-color: #00aced;
 
   &::after {
+
     content: "\f099";
-    @include after;
+    @include brands;
+    left: 89px;
   }
 }
 
@@ -189,7 +195,8 @@ $bradius: 10px;
 
   &::after {
     content: "\f0e1";
-    @include after;
+    @include brands;
+    left: 80px;
   }
 }
 
@@ -198,7 +205,8 @@ $bradius: 10px;
 
   &::after {
     content: "\f39e";
-    @include after;
+    @include brands;
+    left: 74px;
   }
 }
 
@@ -207,6 +215,7 @@ $bradius: 10px;
 
   &::after {
     content: "\f09b";
-    @include after;
+    @include brands;
+    left: 89px;
   }
 }
