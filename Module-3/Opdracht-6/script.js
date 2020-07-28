@@ -3,7 +3,7 @@ one slice of bread
 one slice of cheese
 */
 // Deel A
-function breadWithCheese() {
+function breadWithCheese(){
   console.log('one slice of bread');
   console.log('one slice of cheese');
 }

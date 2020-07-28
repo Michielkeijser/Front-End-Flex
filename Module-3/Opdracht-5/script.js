@@ -1,16 +1,16 @@
-let person = {
+const person = {
   name: 'michiel',
   age: 32,
   evaluations: [7, 10, 9]
-};
+}
 
-console.log(person);
+console.log(person)
 
-console.log(person.name);
+console.log(person.name)
 
-console.log(person['age']);
+console.log(person.age)
 
-console.log(person['evaluations']);
+console.log(person.evaluations)
 
 // Deel 2
 let arrayColors = ['red', 'blue', 'green', 'purple']
