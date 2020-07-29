@@ -1,5 +1,5 @@
-let calculateSupply = function (age, amount) {
-  let lifetimeSupply = (amount * 365) * age;
+const calculateSupply = function (age, amount) {
+  const lifetimeSupply = (amount * 365) * age;
   console.log('You will need ' + lifetimeSupply + ' to last until the ripe old age of ' + age );
 }
 
