@@ -9,7 +9,7 @@ while (i < colors.length) {
   i++
 }
 
-colors.forEach(Element => console.log(colors))
+colors.forEach((color) => console.log(color))
 
 /*
 For loop neemt 4 in.
@@ -29,4 +29,4 @@ const kleur = {
 }
 
 const values = Object.values(kleur)
-console.log(values);
+console.log(values)
