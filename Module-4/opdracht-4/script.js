@@ -9,19 +9,10 @@ const array = [
 
 for (let person of array) {
   console.log(person);
-}
-
-for (let person of array) {
+  console.log(person.name);
   console.log(2020 - person.age);
-}
-
-for (let person of array) {
   console.log(person.name + " is een " + person.profession);
-}
-
-for (let person of array) {
   if (person.age > 50) {
-    console.log(person);
+    console.log(person.name + " is ouder dan 50 jaar ");
   }
 }
-// vraag 5: ja dit werkt.
