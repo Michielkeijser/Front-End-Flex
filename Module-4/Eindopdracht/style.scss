@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica;
+  text-align: center;
+}
+
+#movies--display {
+  margin: 30px auto;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+  & li {
+    list-style: none;
+  }
+  & img {
+    height: 300px;
+    width: 202px;
+  }
+}

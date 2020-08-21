@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="text/javascript" src="db.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Welkom bij de Winc Filmzoeker</h1>
+      <input type="radio" id="nieuw" name="btn" value="nieuw" />
+      <label for="newestMovies">Films 2014 of nieuwer</label>
+      <input type="radio" id="avengers" name="btn" value="avengers" />
+      <label for="avengers">Avengers</label>
+      <input type="radio" id="x-Men" name="btn" value="x-men" />
+      <label for="x-Men">X-Men</label>
+      <input type="radio" id="princess" name="btn" value="princess" />
+      <label for="princess">Princess</label>
+      <input type="radio" id="batman" name="btn" value="batman" />
+      <label for="batman">Batman</label>
+      <input
+        type="text"
+        placeholder="Search"
+        id="batman"
+        name="search"
+        value=""
+      />
+    </nav>
+    <main>
+      <ul id="movies--display"></ul>
+    </main>
+  </body>
+</html>
