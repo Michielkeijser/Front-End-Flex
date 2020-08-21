@@ -39,7 +39,7 @@ radioBtns.forEach(button => {
         filteredMovies("Batman", "");
         break;
       case e.target.value:
-        filteredMovies(e.target.value, "");
+        filteredMovies(e.target, "");
         break;
       default:
         filteredMovies("", "");
