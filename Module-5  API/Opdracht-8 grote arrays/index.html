@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="scripts/api-client.js"></script>
-    <script defer src="scripts/script.js"></script>
+    <script defer src="randomPersonData/randomPersonData.js"></script>
+    <script defer src="scripts/landenlijst.js"></script>
+    <script defer src="scripts/steenbokvrouwen.js"></script>
+    <script defer src="scripts/creditcards.js"></script>
+    <script defer src="scripts/meestemensen.js"></script>
+    <script defer src="scripts/gemiddelde-leeftijd.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <h1>Genre's</h1>
-    <ul class="genre__display"></ul>
-    <h1>My Top Movie</h1>
-    <p class="top__movie"></p>
-    <h1>Top Rated Movies</h1>
-    <ul class="top__rated"></ul>
-    <h1>Movies From 1975</h1>
-    <ul class="movies__1975"></ul>
+    <nav>
+      <input type="button" id="regions-button" value="Landenlijst" />
+      <input type="button" id="steenbokvrouwen-button" value="Steenbokvrouwen" />
+      <input type="button" id="creditcard-button" value="Creditcards" />
+      <input type="button" id="meeste-mensen-button" value="Meeste mensen" />
+      <input type="button" id="gemiddelde-leeftijd" value="Gemiddelde leeftijd" />
+    </nav>
+
+    <ul id="display-results"></ul>
   </body>
 </html>
