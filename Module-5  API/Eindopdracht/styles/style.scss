@@ -1,0 +1,76 @@
+$borderColor: rgb(142, 142, 142);
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: $borderColor;
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+@mixin border-width {
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+ul {
+  min-height: 250px;
+  width: 500px;
+  margin: 20px auto;
+  padding: 0;
+  border-style: solid;
+  @include border-width;
+  border-color: $borderColor;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  list-style: none;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: $borderColor;
+  color: $borderColor;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.fa-trash {
+  position: relative;
+  right: 50px;
+  color: $borderColor;
+  cursor: pointer;
+}
+
+.todoDescription {
+  width: 500px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#todoTextfield {
+  border-style: solid;
+  @include border-width;
+  height: 20px;
+  width: 350px;
+  color: $borderColor;
+
+  &:focus {
+    outline-color: #423c3c;
+  }
+}
+
+#addTodoButton {
+  color: white;
+  background-color: $borderColor;
+  @include border-width();
+  height: 24px;
+  width: 50px;
+  &:focus {
+    outline-color: #423c3c;
+  }
+}

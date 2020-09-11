@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: #8e8e8e;
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+ul {
+  min-height: 250px;
+  width: 500px;
+  margin: 20px auto;
+  padding: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: #8e8e8e;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  list-style: none;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: #8e8e8e;
+  color: #8e8e8e;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.fa-trash {
+  position: relative;
+  right: 50px;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.todoDescription {
+  width: 500px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#todoTextfield {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  height: 20px;
+  width: 350px;
+  color: #8e8e8e;
+}
+
+#todoTextfield:focus {
+  outline-color: #423c3c;
+}
+
+#addTodoButton {
+  color: white;
+  background-color: #8e8e8e;
+  border-width: 1px;
+  border-radius: 3px;
+  height: 24px;
+  width: 50px;
+}
+
+#addTodoButton:focus {
+  outline-color: #423c3c;
+}
+/*# sourceMappingURL=style.css.map */
