@@ -35,7 +35,7 @@ test("Should be under or equal to 1600", () => {
 
 // Regex
 test("There is no I in team", () => {
-  expect("team").not.toEqual("I");
+  expect("team").not.toEqual(/I/i);
   //  expect('team').not.to..........;
 });
 
