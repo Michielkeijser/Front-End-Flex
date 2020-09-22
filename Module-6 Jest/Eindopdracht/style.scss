@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: turquoise;
+  font-family: sans-serif;
+}
+
+.win,
+.lose {
+  display: none;
+}
+
+.win h2 {
+  color: red;
+}
+
+.lose h2 {
+  color: blue;
+}
+@mixin buttons {
+  border-style: hidden;
+  border-width: 1px;
+  border-radius: 3px;
+}
+.guess {
+  @include buttons;
+  &:hover {
+    background-color: deepskyblue;
+  }
+}
+
+.restart {
+  @include buttons;
+  &:hover {
+    background-color: deepskyblue;
+  }
+}
