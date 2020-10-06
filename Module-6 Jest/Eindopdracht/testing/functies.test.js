@@ -5,29 +5,44 @@ const { guessedLetters } = require("./functies.js");
 const { gameOver } = require("./functies.js");
 const { remainingLetters } = require("./functies.js");
 
-const testlist = ["test"];
-const testlistSplit = ["t", "e", "s", "t"];
+const testWord = ["vis"];
+const testWordSplit = ["v", "i", "s"];
+const wordList = ["vis", "toeter", "developer", "telefoon", "moeder", "snoer", "geeuw"];
 
 test("Kiest een Random word uit de array", () => {
-  expect(wordpicker(testlist)).toEqual(testlistSplit);
+  expect(wordList).toContainEqual(wordpicker(wordList));
+});
+
+test("Gekozen woord staat niet in de array", () => {
+  expect("wordList").not.toContainEqual(wordpicker(testWord));
 });
 
 test("Vergelijkt de inputletter met de letter uit het gekozen woord", () => {
-  expect(chosenLetterExists(testlistSplit, "t")).toBe(true);
+  expect(chosenLetterExists(testWordSplit, "v")).toBe(true);
 });
 
 test("updated het aantal pogingen bij een fout antwoord", () => {
-  expect(updateTries(testlistSplit, "q")).toBe(false);
+  expect(updateTries(testWordSplit, "q")).toBe(false);
 });
 
 test("updaten van de lijst met fout geraden letters", () => {
-  expect(guessedLetters(testlistSplit, ["q"])).toEqual(["q"]);
+  expect(guessedLetters(testWordSplit, ["q"])).toEqual(["q"]);
 });
 
 test("stoppen van het spel na 5 pogingen", () => {
-  expect(gameOver(5)).toBe(true);
+  let tries = 5;
+  expect(gameOver(tries)).toBe(true);
 });
 
-test("Winnen van de game", () => {
-  expect(remainingLetters(testlistSplit, testlistSplit)).toBe(true);
+test("controleren of er nog pogingen over zijn", () => {
+  let tries = 3;
+  expect(gameOver(tries)).toBe(false);
+});
+
+test("controleren of alle leters zijn geraden", () => {
+  expect(remainingLetters(testWordSplit, ["v", "i", "s"])).toBe(true);
+});
+
+test("controleren of er nog letters niet zijn geraden", () => {
+  expect(remainingLetters(testWordSplit, ["v", "i", "t"])).toBe(false);
 });

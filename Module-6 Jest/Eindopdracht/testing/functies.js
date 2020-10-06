@@ -1,6 +1,6 @@
 const wordpicker = list => {
   const index = Math.floor(Math.random() * list.length);
-  return list[index].split("");
+  return list[index];
 };
 
 const chosenLetterExists = (word, inputLetter) => word.includes(inputLetter);
@@ -23,11 +23,7 @@ const guessedLetters = (word, inputs) => {
 };
 
 const gameOver = tries => {
-  if (tries === 5) {
-    return true;
-  } else {
-    return false;
-  }
+  return tries === 5;
 };
 
 const remainingLetters = (word, inputs) => {
