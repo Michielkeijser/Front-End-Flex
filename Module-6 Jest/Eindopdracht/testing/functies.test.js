@@ -35,7 +35,7 @@ test("stoppen van het spel na 5 pogingen", () => {
 });
 
 test("controleren of er nog pogingen over zijn", () => {
-  let tries = 3;
+  let tries = 4;
   expect(gameOver(tries)).toBe(false);
 });
 
