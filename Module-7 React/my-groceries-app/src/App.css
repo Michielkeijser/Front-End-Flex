@@ -1,0 +1,37 @@
+ul {
+  padding: 0;
+  width: 500px;
+}
+
+li {
+  margin: 5px 0;
+  list-style: none;
+}
+
+.ShoppingList {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.AppContainer {
+  display: flex;
+}
+
+.ShoppingList li:nth-child(odd) {
+  background-color: #e28583;
+}
+
+.ShoppingList li:nth-child(even) {
+  background-color: #f2b8c0;
+}
+
+.ShoppingCart li:nth-child(odd) {
+  background-color: #b5d6e2;
+}
+
+.ShoppingCart li:nth-child(even) {
+  background-color: #e3fcfe;
+}

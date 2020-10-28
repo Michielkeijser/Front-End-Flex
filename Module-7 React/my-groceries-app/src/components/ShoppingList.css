@@ -1,0 +1,7 @@
+.ShoppingList li:nth-child(odd) {
+  background-color: #e28583;
+}
+
+.ShoppingList li:nth-child(even) {
+  background-color: #f2b8c0;
+}
