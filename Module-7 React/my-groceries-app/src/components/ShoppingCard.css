@@ -1,7 +1,0 @@
-.ShoppingCard li:nth-child(odd) {
-  background-color: #b5d6e2;
-}
-
-.ShoppingCard li:nth-child(even) {
-  background-color: #f2b8c0;
-}
