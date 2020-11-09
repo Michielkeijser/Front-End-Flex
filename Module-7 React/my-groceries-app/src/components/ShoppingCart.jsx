@@ -1,14 +1,20 @@
-import React, { Component } from 'react'
-import List from './List'
+import React from 'react'
+import ListItem from './ListItem'
 
-export default class ShoppingCart extends Component {
-    render() {
-        return (
-            <div className="ShoppingCart" >
+
+export default function ShoppingCart({shoppingCart, setShoppingCart}) {
+    const leegCart = () => {
+    setShoppingCart([])
+}
+    return (
+       <div className="ShoppingCart" >
                 <h1>Winkelmand</h1>
-                <button type="reset">Leeg Winkelmand</button>
-                <List />
+                <button onClick={leegCart} >Leeg Winkelmand</button>
+            <ul>
+              {shoppingCart.map(item => (
+                    <ListItem  key={item.id} id={item.id} value={item.value} amount={item.amount} />
+                    ))}
+                </ul>
             </div>
-        )
-    }
+    )
 }

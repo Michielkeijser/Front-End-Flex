@@ -1,11 +1,9 @@
 import React from 'react'
 
-function ListItem(props) {
+export default function ListItem({ id, value, amount}) {
+
     return (
-        <div>
-            
-        </div>
+        <li id={id} >{value}</li>
     )
 }
 
-export default ListItem

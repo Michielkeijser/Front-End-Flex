@@ -1,16 +1,27 @@
-import React, { Component } from 'react'
+import React from 'react'
+import ShoppingCart from './ShoppingCart'
 
-export default class InputForm extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Boodschappenlijst</h1>
-                <div>
-                    <input type="text" />
-                    <button type="submit">Add to list</button>
-                </div>
-              
-            </div>
-        )
+
+export default function InputForm({ setinputText, shoppingList, setShoppingList, inputText, shoppingCart, setShoppingCart }) {
+    const inputTextHandler = e => {
+        setinputText(e.target.value)
     }
+    const submitInputHandler = e => {
+        e.preventDefault()
+        setShoppingList([
+            ...shoppingList, { value: inputText, id: Math.random() * 1000, amount: 1,},
+        ])
+        setinputText('')
+    }
+    return (
+        <div>
+                <React.Fragment>
+                <h1>Boodschappenlijst</h1>
+                <form>
+                    <input value={inputText} onChange={inputTextHandler} type="text" />
+                    <button onClick={submitInputHandler}>Add to list</button>
+                </form>
+            </React.Fragment> 
+        </div>
+    )
 }
