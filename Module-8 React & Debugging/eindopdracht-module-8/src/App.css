@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  color: white;
+  background-color: rgb(79, 79, 79);
+  height: 60px;
+  margin: 0;
+  align-items: center;
+}
+
+.navbar li {
+  border: 2px;
+  border-style: solid;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
